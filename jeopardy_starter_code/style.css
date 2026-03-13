@@ -1,0 +1,102 @@
+/*
+  You don't need to touch this file to complete the assignment!
+  Unless you want to add styles and make it look more beautiful.
+*/
+/* Had to edit to make it really look like jeopardy
+/*
+  Colors that will work:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+/* Page layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Main title */
+h1 {
+  text-align: center;
+}
+
+/* Start and Restart button */
+#play {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hide elements with this class */
+.disabled {
+  display: none;
+}
+
+/* Hide viewed clues (already clicked) */
+.viewed {
+  visibility: hidden;
+}
+
+/* Game board table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  table-layout: fixed; /* Equal column widths so no misalignment no more */
+}
+
+/* Category headers */
+th {
+  background-color: #115ff4;
+  color: white;
+  padding: 10px;
+  border: 2px solid #333;
+  text-align: center;
+}
+
+/* Table cells containing clues */
+td {
+  padding: 0;
+  border: 2px solid #333;
+  text-align: center;
+}
+
+/* Individual clue tiles (clickable) */
+.clue {
+  background-color: #060ce9;
+  color: gold;
+  padding: 30px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Clue hover effect */
+.clue:hover {
+  background-color: #115ff4;
+}
+
+/* Area where question/answer appears */
+/* Also where functionality for those questions*/
+#active-clue {
+  margin: 20px 0;
+  padding: 20px;
+  min-height: 60px;
+  border: 2px solid #333;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Loading spinner */
+/*Quick little spinner*/
+#spinner {
+  font-size: 48px;
+  text-align: center;
+  margin: 50px;
+}
